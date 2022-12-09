@@ -1,16 +1,40 @@
+using Breakfast.ServiceErrors;
+using ErrorOr;
+
 namespace Breakfast.Services.Breakfasts;
 
 public class BreakfastService : IBreakfastService
 {
     private static readonly Dictionary<Guid, Models.Breakfast> ibreakfasts = new();
-    public void CreateBreakfast(Models.Breakfast breakfast)
+    public ErrorOr<Created> CreateBreakfast(Models.Breakfast breakfast)
     {
         ibreakfasts.Add( breakfast.Id, breakfast);
+
+        return Result.Created;
         
     }
 
-    public Models.Breakfast GetBreakfast(Guid id)
+    public ErrorOr<Deleted> DeleteBreakfast(Guid id)
     {
-        return ibreakfasts[id];
+        ibreakfasts.Remove(id);
+
+        return Result.Deleted;
+    }
+
+    public ErrorOr<Models.Breakfast> GetBreakfast(Guid id)
+    {
+       if( ibreakfasts.TryGetValue(id, out var breakfast))
+       {
+        return breakfast;
+       }
+
+       return Errors.Breakfast.NotFound;
+    }
+
+    public ErrorOr<Updated> UpsertBreakfast(Models.Breakfast breakfast)
+    {
+       ibreakfasts[breakfast.Id] = breakfast;
+
+       return Result.Updated;
     }
 }

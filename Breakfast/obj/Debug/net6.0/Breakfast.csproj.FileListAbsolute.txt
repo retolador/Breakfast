@@ -22,3 +22,4 @@ C:\Users\pau58\projectos\Breakfast\Breakfast\obj\Debug\net6.0\refint\Breakfast.d
 C:\Users\pau58\projectos\Breakfast\Breakfast\obj\Debug\net6.0\Breakfast.pdb
 C:\Users\pau58\projectos\Breakfast\Breakfast\obj\Debug\net6.0\Breakfast.genruntimeconfig.cache
 C:\Users\pau58\projectos\Breakfast\Breakfast\obj\Debug\net6.0\ref\Breakfast.dll
+C:\Users\pau58\projectos\Breakfast\Breakfast\bin\Debug\net6.0\ErrorOr.dll

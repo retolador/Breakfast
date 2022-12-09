@@ -2,9 +2,12 @@ namespace Breakfast.Services.Breakfasts;
 
 using System;
 using Breakfast.Models;
+using ErrorOr;
 
 public interface IBreakfastService
 {
-    void CreateBreakfast(Breakfast request);
-    Breakfast GetBreakfast(Guid id);
+    ErrorOr<Created> CreateBreakfast(Breakfast request);
+    ErrorOr<Deleted> DeleteBreakfast(Guid id);
+    ErrorOr<Breakfast> GetBreakfast(Guid id);
+    ErrorOr<Updated> UpsertBreakfast(Breakfast breakfast);
 }

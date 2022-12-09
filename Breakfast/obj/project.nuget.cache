@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "oxUvrZgn84eAftB6TINn+vIOID1hvSUiB3T129Sn0ysIK4X+FUNCx5eAQEulFbRhOugA0fNSNI7CEjrBL8hDVg==",
+  "dgSpecHash": "Bc43qa34lvIuwqj6ZDVwR9GJ0/uiNxyUprzLFKXn71ZDnrP8wDwWY38PYzmudalwt02lhh6YiWqk0kuNHF8DTg==",
   "success": true,
   "projectFilePath": "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast\\Breakfast.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\pau58\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512"
+  ],
   "logs": []
 }
