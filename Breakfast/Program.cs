@@ -1,13 +1,16 @@
+using Breakfast.Services.Breakfasts;
+
 var builder = WebApplication.CreateBuilder(args);
+{
+    builder.Services.AddControllers();
+    builder.Services.AddSingleton<IBreakfastService, BreakfastService>();
+}
 
 // Add services to the container.
 
-builder.Services.AddControllers();
-
 
 var app = builder.Build();
-
-
+{
 app.UseHttpsRedirection();
 
 //app.UseAuthorization();
@@ -15,3 +18,7 @@ app.UseHttpsRedirection();
 app.MapControllers();
 
 app.Run();
+}
+
+
+

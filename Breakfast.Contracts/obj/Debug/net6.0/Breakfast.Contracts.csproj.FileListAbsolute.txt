@@ -1,0 +1,12 @@
+C:\Users\pau58\projectos\Breakfast\Breakfast.Contracts\bin\Debug\net6.0\Breakfast.Contracts.deps.json
+C:\Users\pau58\projectos\Breakfast\Breakfast.Contracts\bin\Debug\net6.0\Breakfast.Contracts.dll
+C:\Users\pau58\projectos\Breakfast\Breakfast.Contracts\bin\Debug\net6.0\Breakfast.Contracts.pdb
+C:\Users\pau58\projectos\Breakfast\Breakfast.Contracts\obj\Debug\net6.0\Breakfast.Contracts.csproj.AssemblyReference.cache
+C:\Users\pau58\projectos\Breakfast\Breakfast.Contracts\obj\Debug\net6.0\Breakfast.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pau58\projectos\Breakfast\Breakfast.Contracts\obj\Debug\net6.0\Breakfast.Contracts.AssemblyInfoInputs.cache
+C:\Users\pau58\projectos\Breakfast\Breakfast.Contracts\obj\Debug\net6.0\Breakfast.Contracts.AssemblyInfo.cs
+C:\Users\pau58\projectos\Breakfast\Breakfast.Contracts\obj\Debug\net6.0\Breakfast.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\pau58\projectos\Breakfast\Breakfast.Contracts\obj\Debug\net6.0\Breakfast.Contracts.dll
+C:\Users\pau58\projectos\Breakfast\Breakfast.Contracts\obj\Debug\net6.0\refint\Breakfast.Contracts.dll
+C:\Users\pau58\projectos\Breakfast\Breakfast.Contracts\obj\Debug\net6.0\Breakfast.Contracts.pdb
+C:\Users\pau58\projectos\Breakfast\Breakfast.Contracts\obj\Debug\net6.0\ref\Breakfast.Contracts.dll

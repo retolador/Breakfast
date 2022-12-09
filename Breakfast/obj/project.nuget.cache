@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JN2w39inETuHJ/hvKYnnCP/+BA02vJCMxJdJxn2qmL6afDgIe8moOie2q8p9KwaFnxfcq3DK4E39DYcxBxv0qA==",
+  "dgSpecHash": "oxUvrZgn84eAftB6TINn+vIOID1hvSUiB3T129Sn0ysIK4X+FUNCx5eAQEulFbRhOugA0fNSNI7CEjrBL8hDVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast\\Breakfast.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\pau58\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "C:\\Users\\pau58\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\pau58\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "C:\\Users\\pau58\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "C:\\Users\\pau58\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "C:\\Users\\pau58\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

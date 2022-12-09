@@ -4,14 +4,14 @@
     "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast\\Breakfast.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast\\Breakfast.csproj": {
+    "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast.Contracts\\Breakfast.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast\\Breakfast.csproj",
-        "projectName": "Breakfast",
-        "projectPath": "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast\\Breakfast.csproj",
+        "projectUniqueName": "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast.Contracts\\Breakfast.Contracts.csproj",
+        "projectName": "Breakfast.Contracts",
+        "projectPath": "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast.Contracts\\Breakfast.Contracts.csproj",
         "packagesPath": "C:\\Users\\pau58\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast\\obj\\",
+        "outputPath": "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pau58\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,12 +37,63 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast\\Breakfast.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast\\Breakfast.csproj",
+        "projectName": "Breakfast",
+        "projectPath": "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast\\Breakfast.csproj",
+        "packagesPath": "C:\\Users\\pau58\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pau58\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast.Contracts\\Breakfast.Contracts.csproj": {
+                "projectPath": "C:\\Users\\pau58\\projectos\\Breakfast\\Breakfast.Contracts\\Breakfast.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
