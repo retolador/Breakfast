@@ -31,10 +31,11 @@ public class BreakfastService : IBreakfastService
        return Errors.Breakfast.NotFound;
     }
 
-    public ErrorOr<Updated> UpsertBreakfast(Models.Breakfast breakfast)
+    public ErrorOr<UpsertedBreakfast> UpsertBreakfast(Models.Breakfast breakfast)
     {
+        var isNewlyCreated = !ibreakfasts.ContainsKey(breakfast.Id);
        ibreakfasts[breakfast.Id] = breakfast;
 
-       return Result.Updated;
+       return new UpsertedBreakfast(isNewlyCreated);
     }
 }

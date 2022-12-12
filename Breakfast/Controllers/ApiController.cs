@@ -18,6 +18,7 @@ public class ApiController : ControllerBase
             ErrorType.Conflict => StatusCodes.Status409Conflict,
             _=> StatusCodes.Status500InternalServerError
         };
+        Console.WriteLine(firstError.Description);
         return Problem(statusCode: statusCode, title: firstError.Description);
     }
 }
