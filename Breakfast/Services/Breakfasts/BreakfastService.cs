@@ -16,9 +16,16 @@ public class BreakfastService : IBreakfastService
 
     public ErrorOr<Deleted> DeleteBreakfast(Guid id)
     {
+
+        if( ibreakfasts.TryGetValue(id, out var breakfast))
+       {
         ibreakfasts.Remove(id);
 
         return Result.Deleted;
+       }
+
+       return Errors.Breakfast.NotFound;
+        
     }
 
     public ErrorOr<Models.Breakfast> GetBreakfast(Guid id)

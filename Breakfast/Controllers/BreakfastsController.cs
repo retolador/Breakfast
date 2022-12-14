@@ -19,13 +19,7 @@ public class BreakfastController : ApiController
     [HttpPost("")]
     public IActionResult CreateBreakfast(CreateBreakfastRequest request)
     {
-        ErrorOr<Models.Breakfast> requestToBreakfastResult =  Models.Breakfast.Create(
-            request.Name,
-            request.Description,
-            request.StartDateTime,
-            request.EndDateTime,
-            request.Savory,
-            request.Sweet);
+        ErrorOr<Models.Breakfast> requestToBreakfastResult =  Models.Breakfast.From(request);
 
         if(requestToBreakfastResult.IsError)
         {
@@ -79,15 +73,13 @@ public class BreakfastController : ApiController
     [HttpPut("{id:guid}")]
     public IActionResult UpsertBreakfast(Guid id, CreateBreakfastRequest request)
     {
-         var breakfast = new Models.Breakfast(
-            id,
-            request.Name,
-            request.Description,
-            request.StartDateTime,
-            request.EndDateTime,
-            DateTime.UtcNow,
-            request.Savory,
-            request.Sweet);
+         ErrorOr<Models.Breakfast> requestToBreakfastResult = Models.Breakfast.From(id, request);
+
+            if(requestToBreakfastResult.IsError)
+            {
+                return Problem(requestToBreakfastResult.Errors);
+            }
+            var breakfast = requestToBreakfastResult.Value;
         ErrorOr<UpsertedBreakfast> upsertBreakfastResult = ibreakfastService.UpsertBreakfast(breakfast);
 
         // TODO: return 201 if a new breakfast was created

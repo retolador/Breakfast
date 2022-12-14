@@ -1,11 +1,12 @@
 namespace Breakfast.Models;
 using ErrorOr;
+using global::Breakfast.Contracts.Breakfasts;
 using global::Breakfast.ServiceErrors;
 
 public class Breakfast
 {
     public const int MinNameLength = 3;
-    public const int MaxNameLength = 3;
+    public const int MaxNameLength = 15;
 
     public const int MinDescriptionLength = 50;
     public const int MaxDescriptionLength = 150;
@@ -50,7 +51,8 @@ public class Breakfast
         DateTime startDateTime, 
         DateTime endDateTime, 
         List<string> savory, 
-        List<string> sweet)
+        List<string> sweet,
+        Guid? id = null)
         {
             List<Error> errors = new();
             if (name.Length is < MinNameLength or > MaxNameLength)
@@ -69,7 +71,7 @@ public class Breakfast
             }
 
             return new Breakfast(
-                Guid.NewGuid(),
+                id ?? Guid.NewGuid(),
                 name,
                 description,
                 startDateTime,
@@ -78,6 +80,31 @@ public class Breakfast
                 savory,
                 sweet);
 
+        }
+
+        public static ErrorOr<Breakfast> From(CreateBreakfastRequest request)
+        {
+            return Create(
+                request.Name,
+                request.Description,
+                request.StartDateTime,
+                request.EndDateTime,
+                request.Savory,
+                request.Sweet
+            );
+        }
+
+        public static ErrorOr<Breakfast> From(Guid id,CreateBreakfastRequest request)
+        {
+            return Create(
+                request.Name,
+                request.Description,
+                request.StartDateTime,
+                request.EndDateTime,
+                request.Savory,
+                request.Sweet,
+                id
+            );
         }
 
     
